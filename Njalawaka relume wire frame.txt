@@ -1,0 +1,38 @@
+Page: **Home**
+ - Navbar
+ - Hero Header Section: Eye-catching introduction to Njalawaka Agro dealers, highlighting their expertise in quality seeds and agricultural services.
+ - Features List Section: Three key offerings: a variety of quality seeds (maize, ground nuts, beans, soya), motorised maize sheller hire, and tractor hire.
+ - Stats Section: Impressive statistics on years in business, customers served, and hectares supported.
+ - Feature Section: Spotlight on the benefits of using certified seeds for higher yields.
+ - FAQ Section: Answers to common customer questions about seed types, hiring equipment, and delivery.
+ - CTA Section: Clear call to action encouraging customers to explore products or hire services.
+ - Footer
+
+Sub-pages: Products, Hire Services, Contact Us
+
+
+Page: **Products**
+ - Navbar
+ - Header Section: Introduction to the range of seeds available for purchase, emphasizing quality and variety.
+ - Ecommerce Products List Section: Display of all available seed types (maize, ground nuts, beans, soya, etc.) with images, short descriptions, and options to learn more or purchase.
+ - Feature Section: Highlight the benefit of certified, high-germination seeds for successful harvests.
+ - CTA Section: Encouragement to contact for bulk orders or inquire about seed recommendations.
+ - Footer
+
+Page: **Hire Services**
+ - Navbar
+ - Header Section: Introduction to the hire services offered by Njalawaka Agro dealers, emphasizing convenience and efficiency for farmers.
+ - Features List Section: Overview of available equipment for hire: Motorised Maize Sheller and Tractor.
+ - Feature Section: Detailed focus on the Motorised Maize Sheller: benefits, capacity, and suitability for large/small farms.
+ - Feature Section: Detailed focus on Tractor Hire: uses (ploughing, harrowing, transportation), reliability, and operator availability.
+ - CTA Section: Clear call to action prompting visitors to book equipment or request a quote.
+ - Footer
+
+Page: **Contact Us**
+ - Navbar
+ - Header Section: Welcome message inviting customers to get in touch for seed purchases, hire inquiries, or general questions.
+ - Contact Section: Company contact details: address, phone number, email, business hours, and social media links.
+ - Contact Form Section: Simple contact form for visitors to send inquiries directly through the website.
+ - Locations Section: Map and/or list showing the physical location(s) of Njalawaka Agro dealers for in-person visits.
+ - CTA Section: Encouragement to reach out for expert advice or to request a quote.
+ - Footer
