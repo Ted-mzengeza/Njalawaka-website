@@ -12,7 +12,7 @@ function Login() {
   const handleLogin = async (e) => {
     e.preventDefault();
 
-    const res = await fetch("http://127.0.0.1:5000/login",{
+    const res = await fetch("http://njalawaka-agri-and-general-dealers.onrender.com/login",{
       method:"POST",
       headers:{
         "Content-Type":"application/json"

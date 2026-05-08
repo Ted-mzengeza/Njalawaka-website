@@ -7,7 +7,7 @@ const [open,setOpen]=useState(null);
 
 useEffect(()=>{
 
-fetch("http://127.0.0.1:5000/products")
+fetch("http://njalawaka-agri-and-general-dealers.onrender.com/products")
 .then(res=>res.json())
 .then(data=>setProducts(data));
 

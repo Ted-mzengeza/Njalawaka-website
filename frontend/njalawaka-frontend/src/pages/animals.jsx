@@ -6,7 +6,7 @@ const [animals,setAnimals]=useState([]);
 
 useEffect(()=>{
 
-fetch("http://127.0.0.1:5000/animals")
+fetch("http://njalawaka-agri-and-general-dealers.onrender.com/animals")
 .then(res=>res.json())
 .then(data=>setAnimals(data));
 

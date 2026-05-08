@@ -34,19 +34,19 @@ function Admin() {
   },[]);
 
   const loadProducts = () => {
-    fetch("http://127.0.0.1:5000/products")
+    fetch("http://njalawaka-agri-and-general-dealers.onrender.com/products")
       .then(res=>res.json())
       .then(data=>setProducts(data));
   };
 
   const loadEquipment = () => {
-    fetch("http://127.0.0.1:5000/equipment")
+    fetch("http://njalawaka-agri-and-general-dealers.onrender.com/equipment")
       .then(res=>res.json())
       .then(data=>setEquipment(data));
   };
 
   const loadAnimals = () => {
-    fetch("http://127.0.0.1:5000/animals")
+    fetch("http://njalawaka-agri-and-general-dealers.onrender.com/animals")
       .then(res=>res.json())
       .then(data=>setAnimals(data));
   };
@@ -86,14 +86,14 @@ function Admin() {
     const endpoint = getEndpoint();
 
     if(editingId){
-      await fetch(`http://127.0.0.1:5000/${endpoint}/${editingId}`,{
+      await fetch(`https://njalawaka-agri-and-general-dealers.onrender.com/${endpoint}/${editingId}`,{
         method:"PUT",
         body:formData
       });
       alert("Updated ✅");
       setEditingId(null);
     }else{
-      await fetch(`http://127.0.0.1:5000/${endpoint}`,{
+      await fetch(`https://njalawaka-agri-and-general-dealers.onrender.com/${endpoint}`,{
         method:"POST",
         body:formData
       });
@@ -111,7 +111,7 @@ function Admin() {
   const deleteItem = async (id) => {
     const endpoint = getEndpoint();
 
-    await fetch(`http://127.0.0.1:5000/${endpoint}/${id}`,{
+    await fetch(`http://njalawaka-agri-and-general-dealers.onrender.com/${endpoint}/${id}`,{
       method:"DELETE"
     });
 
@@ -249,7 +249,7 @@ function Admin() {
 
               {item.image && (
                 <img
-                  src={`http://127.0.0.1:5000/uploads/${item.image}`}
+                  src={`https://njalawaka-agri-and-general-dealers.onrender.com/uploads/${item.image}`}
                   className="w-full h-40 object-cover"
                 />
               )}

@@ -6,7 +6,7 @@ const [equipment,setEquipment]=useState([]);
 
 useEffect(()=>{
 
-fetch("http://127.0.0.1:5000/equipment")
+fetch("http://njalawaka-agri-and-general-dealers.onrender.com/equipment")
 
 .then(res=>res.json())
 

@@ -12,7 +12,7 @@ function Register() {
   const handleRegister = async (e) => {
     e.preventDefault();
 
-    const res = await fetch("http://127.0.0.1:5000/register",{
+    const res = await fetch("http://njalawaka-agri-and-general-dealers.onrender.com/register",{
       method:"POST",
       headers:{
         "Content-Type":"application/json"
