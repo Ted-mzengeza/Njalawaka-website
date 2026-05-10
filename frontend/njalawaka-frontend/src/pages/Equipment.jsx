@@ -6,7 +6,7 @@ const [equipment,setEquipment]=useState([]);
 
 useEffect(()=>{
 
-fetch("http://njalawaka-agri-and-general-dealers.onrender.com/equipment")
+fetch("https://njalawaka-agri-and-general-dealers.onrender.com/equipment")
 
 .then(res=>res.json())
 
@@ -104,7 +104,7 @@ className="bg-white rounded-2xl shadow-md hover:shadow-2xl hover:-translate-y-2 
 {item.image && (
 
 <img
-src={`http://njalawaka-agri-and-general-dealers.onrender.com/uploads/${item.image}`}
+src={`https://njalawaka-agri-and-general-dealers.onrender.com/uploads/${item.image}`}
 className="h-56 w-full object-cover"
 />
 

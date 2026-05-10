@@ -34,19 +34,19 @@ function Admin() {
   },[]);
 
   const loadProducts = () => {
-    fetch("http://njalawaka-agri-and-general-dealers.onrender.com/products")
+    fetch("https://njalawaka-agri-and-general-dealers.onrender.com/products")
       .then(res=>res.json())
       .then(data=>setProducts(data));
   };
 
   const loadEquipment = () => {
-    fetch("http://njalawaka-agri-and-general-dealers.onrender.com/equipment")
+    fetch("https://njalawaka-agri-and-general-dealers.onrender.com/equipment")
       .then(res=>res.json())
       .then(data=>setEquipment(data));
   };
 
   const loadAnimals = () => {
-    fetch("http://njalawaka-agri-and-general-dealers.onrender.com/animals")
+    fetch("https://njalawaka-agri-and-general-dealers.onrender.com/animals")
       .then(res=>res.json())
       .then(data=>setAnimals(data));
   };
@@ -111,7 +111,7 @@ function Admin() {
   const deleteItem = async (id) => {
     const endpoint = getEndpoint();
 
-    await fetch(`http://njalawaka-agri-and-general-dealers.onrender.com/${endpoint}/${id}`,{
+    await fetch(`https://njalawaka-agri-and-general-dealers.onrender.com/${endpoint}/${id}`,{
       method:"DELETE"
     });
 

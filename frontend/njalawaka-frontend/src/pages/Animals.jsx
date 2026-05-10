@@ -6,7 +6,7 @@ const [animals,setAnimals]=useState([]);
 
 useEffect(()=>{
 
-fetch("http://njalawaka-agri-and-general-dealers.onrender.com/animals")
+fetch("https://njalawaka-agri-and-general-dealers.onrender.com/animals")
 .then(res=>res.json())
 .then(data=>setAnimals(data));
 
@@ -61,7 +61,7 @@ className="bg-white rounded-2xl shadow-md hover:shadow-2xl hover:-translate-y-2 
 {animal.image && (
 
 <img
-src={`http://njalawaka-agri-and-general-dealers.onrender.com/uploads/${animal.image}`}
+src={`https://njalawaka-agri-and-general-dealers.onrender.com/uploads/${animal.image}`}
 className="w-full h-56 object-cover"
 />
 

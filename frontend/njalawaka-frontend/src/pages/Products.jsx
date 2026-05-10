@@ -7,7 +7,7 @@ const [open,setOpen]=useState(null);
 
 useEffect(()=>{
 
-fetch("http://njalawaka-agri-and-general-dealers.onrender.com/products")
+fetch("https://njalawaka-agri-and-general-dealers.onrender.com/products")
 .then(res=>res.json())
 .then(data=>setProducts(data));
 
@@ -33,7 +33,7 @@ className="bg-white rounded-2xl shadow-md hover:shadow-2xl hover:-translate-y-2 
 {product.image && (
 
 <img
-src={`http://njalawaka-agri-and-general-dealers.onrender.com/uploads/${product.image}`}
+src={`https://njalawaka-agri-and-general-dealers.onrender.com/uploads/${product.image}`}
 className="w-full h-56 object-cover"
 />
 
