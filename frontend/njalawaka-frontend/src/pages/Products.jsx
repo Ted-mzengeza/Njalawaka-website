@@ -33,7 +33,7 @@ className="bg-white rounded-2xl shadow-md hover:shadow-2xl hover:-translate-y-2 
 {product.image && (
 
 <img
-src={`http://127.0.0.1:5000/uploads/${product.image}`}
+src={`http://njalawaka-agri-and-general-dealers.onrender.com/uploads/${product.image}`}
 className="w-full h-56 object-cover"
 />
 

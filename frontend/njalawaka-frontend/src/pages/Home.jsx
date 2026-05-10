@@ -217,7 +217,7 @@ className="bg-white rounded-2xl shadow-md hover:shadow-2xl hover:-translate-y-2 
 {item.image && (
 
 <img
-src={`http://127.0.0.1:5000/uploads/${item.image}`}
+src={`http://njalawaka-agri-and-general-dealers.onrender.com/uploads/${item.image}`}
 className="w-full h-56 object-cover"
 />
 
