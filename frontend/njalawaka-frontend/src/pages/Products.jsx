@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Navbar from "../components/Navbar";
 
 function Products() {
 
@@ -76,6 +77,7 @@ Order on WhatsApp
 return(
 
 <div className="bg-gray-50 min-h-screen">
+<Navbar />
 
 
 {/* HERO */}
@@ -93,7 +95,7 @@ backgroundPosition:"center"
 
 <div className="relative z-10 max-w-3xl mx-auto">
 
-<h1 className="text-6xl font-bold mb-4">
+<h1 className="text-4xl md:text-6xl font-bold mb-4">
 Premium Agricultural Products
 </h1>
 
@@ -110,7 +112,7 @@ Certified seeds and grains supporting Malawian farmers nationwide
 
 <div className="bg-white shadow-sm">
 
-<div className="max-w-6xl mx-auto py-6 flex justify-center gap-10 text-green-700 font-semibold">
+<div className="max-w-6xl mx-auto py-6 flex flex-wrap justify-center gap-6 text-center text-green-700 font-semibold">
 
 <span>✔ Quality Assured</span>
 <span>✔ Farmer Trusted</span>
@@ -124,7 +126,7 @@ Certified seeds and grains supporting Malawian farmers nationwide
 
 {/* PRODUCTS */}
 
-<div className="max-w-7xl mx-auto px-8 py-20">
+<div className="max-w-7xl mx-auto px-8 py-16 md:py-20">
 
 
 <button
@@ -137,7 +139,7 @@ Seeds {open==="seed"?"▲":"▼"}
 
 {open==="seed" && (
 
-<div className="grid md:grid-cols-3 gap-10 mb-20">
+<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mb-20">
 {seeds.map(ProductCard)}
 </div>
 
@@ -155,7 +157,7 @@ Grains {open==="grain"?"▲":"▼"}
 
 {open==="grain" && (
 
-<div className="grid md:grid-cols-3 gap-10">
+<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
 {grains.map(ProductCard)}
 </div>
 
@@ -179,7 +181,7 @@ Chat with our team instantly on WhatsApp
 
 <a
 href="https://wa.me/265999145003"
-className="bg-white text-green-700 px-8 py-3 rounded-full font-semibold"
+className="bg-white text-green-700 px-4 sm:px-6 md:px-8 py-3 rounded-full font-semibold"
 >
 Contact Us Now
 </a>

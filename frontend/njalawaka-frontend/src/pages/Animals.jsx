@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Navbar from "../components/Navbar";
 
 function Animals(){
 
@@ -16,6 +17,7 @@ fetch("https://njalawaka-agri-and-general-dealers.onrender.com/animals")
 return(
 
 <div className="bg-gray-50 min-h-screen">
+<Navbar />
 
 
 {/* HERO */}
@@ -33,7 +35,7 @@ backgroundPosition:"center"
 
 <div className="relative z-10">
 
-<h1 className="text-6xl font-bold mb-4">
+<h1 className="text-4xl md:text-6xl font-bold mb-4">
 Healthy Farm Animals
 </h1>
 
@@ -49,7 +51,7 @@ Quality livestock raised responsibly
 
 {/* GRID */}
 
-<div className="max-w-7xl mx-auto px-8 py-20 grid md:grid-cols-3 gap-10">
+<div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 py-16 md:py-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
 
 {animals.map(animal=>(
 

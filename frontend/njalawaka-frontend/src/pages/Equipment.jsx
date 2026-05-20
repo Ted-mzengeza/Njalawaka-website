@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Navbar from "../components/Navbar";
 
 function Equipment() {
 
@@ -21,6 +22,7 @@ fetch("https://njalawaka-agri-and-general-dealers.onrender.com/equipment")
 return(
 
 <div className="min-h-screen bg-gray-50">
+<Navbar />
 
 
 {/* HERO HEADER */}
@@ -56,7 +58,7 @@ Reliable machinery to increase your farm productivity
 
 <section className="bg-white shadow-sm">
 
-<div className="max-w-6xl mx-auto py-6 flex flex-wrap justify-center gap-10 text-green-700 font-semibold">
+<div className="max-w-6xl mx-auto py-6 flex flex-wrap justify-center gap-6 text-center text-green-700 font-semibold">
 
 <span>✔ Tractors Available</span>
 
@@ -74,7 +76,7 @@ Reliable machinery to increase your farm productivity
 
 {/* EQUIPMENT GRID */}
 
-<section className="max-w-6xl mx-auto px-6 py-20">
+<section className="max-w-6xl mx-auto px-6 py-16 md:py-20">
 
 <h2 className="text-4xl font-bold text-center text-green-800 mb-14">
 
@@ -92,7 +94,7 @@ Equipment listings will appear here soon.
 ):(
 
 
-<div className="grid md:grid-cols-3 gap-10">
+<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
 
 {equipment.map(item=>(
 
@@ -149,7 +151,7 @@ Hire via WhatsApp
 
 {/* CTA SECTION */}
 
-<section className="bg-green-700 text-white text-center py-20">
+<section className="bg-green-700 text-white text-center py-16 md:py-20">
 
 <h2 className="text-4xl font-bold mb-4">
 

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { getProducts, getEquipment } from "../services/api";
+import Navbar from "../components/Navbar";
 
 export default function Home() {
 
@@ -35,48 +36,16 @@ fetchData();
 return(
 
 <div className="min-h-screen bg-gray-50 text-gray-800">
+<Navbar />
 
 
-{/* NAVBAR */}
-
-<nav className="flex justify-between items-center px-10 py-5 bg-white shadow-md sticky top-0 z-50">
-
-<div className="flex items-center gap-3">
-
-<img
-src="/images/logo.png"
-className="h-11"
-/>
-
-<h1 className="text-xl font-bold text-green-700 tracking-wide">
-Njalawaka Agri and General Dealers
-</h1>
-
-</div>
-
-
-<div className="space-x-8 font-medium hidden md:flex">
-
-<Link to="/" className="hover:text-green-700">Home</Link>
-
-<Link to="/products" className="hover:text-green-700">Products</Link>
-
-<Link to="/equipment" className="hover:text-green-700">Equipment</Link>
-
-<Link to="/animals" className="hover:text-green-700">Animals</Link>
-
-<Link to="/contact" className="hover:text-green-700">Contact</Link>
-
-</div>
-
-</nav>
 
 
 
 {/* HERO */}
 
 <section
-className="relative text-white text-center py-40 px-6"
+className="relative text-white text-center py-28 md:py-40 px-6"
 style={{
 backgroundImage:"url('/images/hero-farm.jpg')",
 backgroundSize:"cover",
@@ -88,7 +57,7 @@ backgroundPosition:"center"
 
 <div className="relative z-10 max-w-4xl mx-auto">
 
-<h2 className="text-6xl font-bold mb-6">
+<h2 className="text-4xl md:text-6xl font-bold mb-6">
 Supporting Farmers Across Malawi
 </h2>
 
@@ -126,7 +95,7 @@ Hire Equipment
 
 <section className="bg-white shadow-sm">
 
-<div className="max-w-6xl mx-auto py-6 flex justify-center gap-10 text-green-700 font-semibold">
+<div className="max-w-6xl mx-auto py-6 flex flex-wrap justify-center gap-6 text-center text-green-700 font-semibold">
 
 <span>✔ Quality Seeds</span>
 
@@ -144,7 +113,7 @@ Hire Equipment
 
 {/* FEATURES SECTION */}
 
-<section className="py-24 max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-10 text-center">
+<section className="py-24 max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
 
 <div>
 
@@ -322,7 +291,7 @@ View All Equipment →
 
 {/* CTA STRIP */}
 
-<section className="bg-green-700 text-white py-20 text-center">
+<section className="bg-green-700 text-white py-16 md:py-20 text-center">
 
 <h3 className="text-4xl font-bold mb-4">
 
@@ -366,7 +335,7 @@ Chat With Us Now
 href="https://wa.me/265999145003"
 target="_blank"
 rel="noopener noreferrer"
-className="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white px-5 py-3 rounded-full shadow-lg"
+className="fixed bottom-4 right-4 md:bottom-6 md:right-6 bg-green-500 hover:bg-green-600 text-white px-5 py-3 rounded-full shadow-lg"
 >
 
 WhatsApp

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Package, Tractor, PawPrint, LogOut } from "lucide-react";
+import Navbar from "../components/Navbar";
 
 function Admin() {
 
@@ -139,6 +140,7 @@ function Admin() {
 
   return(
     <div className="min-h-screen bg-gradient-to-br from-gray-100 to-gray-200 p-6">
+    <Navbar />
 
       {/* HEADER */}
       <div className="flex justify-between items-center mb-8">

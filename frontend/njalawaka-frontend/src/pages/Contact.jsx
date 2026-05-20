@@ -1,10 +1,12 @@
+import Navbar from "../components/Navbar";
 export default function Contact() {
   return (
     <div className="min-h-screen bg-gray-50">
+    <Navbar />
 
       {/* Header */}
       <div className="bg-green-800 text-white text-center py-16 px-6">
-        <h1 className="text-5xl font-bold mb-4">
+        <h1 className="text-4xl md:text-5xl font-bold mb-4">
           Contact Njalawaka Agro
         </h1>
         <p className="max-w-2xl mx-auto opacity-90">
